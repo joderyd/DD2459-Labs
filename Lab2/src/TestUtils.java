@@ -1,16 +1,13 @@
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
-import java.util.Scanner;
 
 
 public class TestUtils {
     private static String TESTFILES_PATH = "C:\\Users\\jonth\\git\\solRel\\Lab2\\src\\testFiles";
-    private static StringBuilder stringBuilder;
-
     private TestUtils(){}
+
 
     public static String arrayToString(int[] A){
         StringBuilder sb = new StringBuilder();
@@ -20,12 +17,10 @@ public class TestUtils {
         else{
             sb.append(A.length + ",");
         }
-
         for(int i=0; i<A.length; i++){
             sb.append(A[i] + ",");
         }
         sb.append("\n");
-        //stringBuilder.append(sb.toString());
         return sb.toString();
     }
 
@@ -41,7 +36,6 @@ public class TestUtils {
 
 
     public static void createPairwiseTestArrays(String filename, int size, int integer) {
-        //Random random = new Random();
         int[] A = new int[size];  //default all zero's
         StringBuilder sb = new StringBuilder();
         sb.append(arrayToString(A));
@@ -65,24 +59,27 @@ public class TestUtils {
         }
 
         stringToFile(sb.toString(), filename);
-        //stringBuilder.append(sb.toString());
     }
 
 
 
-    public static void createRandomTestArrays(String filename, int numberOfArrays, int maxSize, int maxInt) {
+    public static void createRandomTestArrays(String filename, int numberOfArrays, int maxSize, int maxInt, int falseKey) {
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
 
         for(int i=0; i<numberOfArrays; i++) {
             int size = Math.abs(random.nextInt(maxSize));
-            if(size == 0) {
-                size = 1;
+            while(size ==0){
+                size = Math.abs(random.nextInt(maxSize));
             }
             sb.append(size + ",");
+
             int[] array = new int[size];
             for(int j=0; j<size; j++) {
                 int element = random.nextInt(maxInt);
+                if(element == falseKey){
+                    element = falseKey-1;
+                }
                 if(random.nextBoolean()){
                     element = -element;
                 }
@@ -90,10 +87,12 @@ public class TestUtils {
                 sb.append(element + ",");
             }
             sb.append("\n");
-            stringToFile(sb.toString(), filename);
         }
+        stringToFile(sb.toString(), filename);
     }
 
+    
+    
     private static synchronized void stringToFile(String string, String filename){
         File file = new File(TESTFILES_PATH + File.separator + filename);
         FileWriter fileWriter;
@@ -112,50 +111,4 @@ public class TestUtils {
             e.printStackTrace();
         }
     }
-
-
-
-
-    public static int createTrueTestKey(int[] Array){
-        Random random = new Random();
-        int limit = Array.length-1;
-        int index = random.nextInt(limit);
-        return Array[index];
-    }
-
-
-    /*
-    public static boolean runRandomTest(String filename) throws IOException{
-        Scanner scanner = new Scanner(new FileReader(new File(TESTFILES_PATH + filename)));
-        while(scanner.hasNext()){
-            String nextLine = scanner.nextLine();
-            int[] testArray = stringToArray(nextLine);
-            int key = createTrueTestKey(testArray);
-
-        }
-        return true;
-    }
-    */
-
-
-
-
-    public static void main(String[] args) {
-        int numOfRandnomArrays = 20;
-        int maxSize = 20;
-        int maxInt = 30;
-        String randomFilename = numOfRandnomArrays +"randomTests.txt";
-
-        try {
-            createRandomTestArrays(randomFilename, numOfRandnomArrays, maxSize, maxInt);
-            //stringToFile(stringBuilder, randomFilename);
-            //createPairwiseTestArrays("pairwiseTests.txt", 20, 1);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
 }
-
