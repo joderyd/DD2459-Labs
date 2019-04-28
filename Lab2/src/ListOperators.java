@@ -29,7 +29,7 @@ public class ListOperators {
             throw new NullPointerException("Array or key must not be null!");
         }
 
-        int x;
+        int x = 0;
         int l = 1;
         int r = A.length -1;
         if(r<0){
@@ -44,7 +44,7 @@ public class ListOperators {
             else{
                 l =x+1;
             }
-        }while( key != A[x] || (l<=r));
+        }while( key != A[x] && (l<=r));
 
         if(key==A[x]){
             return x;
@@ -92,10 +92,10 @@ public class ListOperators {
      * //@requires A!=null && A.length >=1
      * //@ensures
      */
-    public static boolean membership(int[] A, int key) {
+    public static synchronized boolean membership(int[] A, int key) {
         int[] sorted = bubbleSort(A);
         int n = binarySearch(sorted, key);
-        System.out.print(n!= -1);
+        //System.out.print(n!= -1);
         return(n!= -1);
     }
 
