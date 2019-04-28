@@ -11,18 +11,19 @@
 public class ListOperators {
     private ListOperators(){}
 
+
+
+
+
     /**
-     *
-     * @requires key!=null && A is sorted
+     * @requires A is sorted
+     * @ensures A is returned in sorted order
      * @exception NullPointerException if A == null or key == null
      * @exception IllegalArgumentException if A is empty
      *
      * @param A array of integer values of any length. must be sorted
      * @param key integer value that is searched for in A. must not be null
      * @return the index of the key value in the array. If key does not exist in A, -1 is returned
-     *
-     * @ensures
-     *
      */
     public static int binarySearch(int[] A, int key) throws NullPointerException, IllegalArgumentException{
         if(A==null) {
@@ -56,6 +57,8 @@ public class ListOperators {
 
 
 
+
+
     /**
      * Method for sorting array of integers. The same array will be returned but in sorted order
      *
@@ -81,6 +84,8 @@ public class ListOperators {
 
 
 
+
+
     /**
      * Method membership returns a Boolean value that should be 1 if the input key occurs in
      * the input array, and 0 if it does not occur anywhere in the array
@@ -89,13 +94,12 @@ public class ListOperators {
      * @param key value that will be be queried for membership
      * @return true if key exists in A, otherwise false
      *
-     * //@requires A!=null && A.length >=1
-     * //@ensures
+     * @requires A!=null && A.length >=1
+     * @ensures that functions returns true if key exists in A, otherwise false
      */
     public static synchronized boolean membership(int[] A, int key) {
         int[] sorted = bubbleSort(A);
         int n = binarySearch(sorted, key);
-        //System.out.print(n!= -1);
         return(n!= -1);
     }
 
