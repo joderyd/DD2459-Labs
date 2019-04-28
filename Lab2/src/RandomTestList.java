@@ -62,6 +62,7 @@ public class RandomTestList {
         if (falseArrays.size() > 0) {
             int[] A = falseArrays.remove(0);
             boolean F = ListOperators.membership(A, maxInt+1);
+            System.out.println("key= " + maxInt+1 + "\nArray= " + TestUtils.arrayToString(A));
             assertFalse(F);
             if(!F){
                 stringBuilder.append("key = " + maxInt+1 + " was successfully not found!\n");
@@ -87,6 +88,8 @@ public class RandomTestList {
             Random random = new Random();
             int index = random.nextInt(A.length);
             int key = A[index];
+            System.out.println("key= " + key + "\nArray= " + TestUtils.arrayToString(A)
+            + "\nSorted= " + TestUtils.arrayToString(ListOperators.bubbleSort(A)));
 
             boolean T = ListOperators.membership(A, key);
             assertTrue(T);
