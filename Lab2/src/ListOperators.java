@@ -64,7 +64,6 @@ public class ListOperators {
      *
      * @param A array of integer values of any length. must not be null
      * @return array of same length and the same values as A, but in sorted order
-     *
      */
     public static int[] bubbleSort(int[] A){
         if(A==null){
