@@ -39,4 +39,3 @@ Trace Type: Counterexample
   -> State: 1.2 <-
     Bit1 = TRUE
     state = s2
-jon@DESKTOP-6UN6PK7:~/nusmv/NuSMV-2.6.0-Linux/bin$
