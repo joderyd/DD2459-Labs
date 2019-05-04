@@ -10,12 +10,13 @@
 
 public class ListOperators {
     private ListOperators(){}
-
-
-
-
-
+    
+    
+    
     /**
+     * Method searches for a key value in the input Array and returns an integer value that should be
+     * n if the key occurs in the input array, in position n and -1 if it does not occur anywhere in 
+     * the array
      *
      * @param A array of integer values of any length. must be sorted
      * @param key integer value that is searched for in A. must not be null
@@ -26,14 +27,13 @@ public class ListOperators {
      */
     public static int binarySearch(int[] A, int key) throws NullPointerException, IllegalArgumentException{
         //@requires A is sorted
-        //@ensures index of key is returned if key exists in A. otherwise -1 is returned.
         if (A == null) {
             throw new NullPointerException("Array or key must not be null!");
         }
         if (A.length < 1) {
             throw new IllegalArgumentException("List must not be empty");
         }
-        
+
         int x = 0;
         int l = 1;
         int r = A.length - 1;
@@ -45,7 +45,8 @@ public class ListOperators {
                 l = x + 1;
             }
         }
-        
+
+        //@ensures index of key is returned if key exists in A. otherwise -1 is returned
         if(key==A[x]){
             return x;
         }
@@ -66,11 +67,10 @@ public class ListOperators {
      * @exception NullPointerException if A == null
      */
     public static int[] bubbleSort(int[] A){
-        //@requires A.length >0
-        //@ensures A is returned in sorted order
         if(A==null){
             throw new NullPointerException("Array must not be null");
         }
+        //@requires A.length >0
         for(int i=0; i<A.length;i++) {
             for(int j=1; j< (A.length-i); j++) {
                 if(A[j-1] > A[j]) {
@@ -80,6 +80,7 @@ public class ListOperators {
                 }
             }
         }
+        //@ensures A is returned in sorted order
         return A;
     }
 
