@@ -22,7 +22,7 @@ public class ListOperators {
     public static int[] bubbleSort(int[] A){
         if(A==null){
             throw new NullPointerException("Array must not be null");
-            // Mutation #1: change the String "Array must not be null" to something else
+            // Mutation #1: change the String "Array must not be null" on the line above to something else
         }
         //@requires A to be a list of integers of any length
         for(int i=0; i<A.length;i++) {
