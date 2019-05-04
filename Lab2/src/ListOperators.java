@@ -22,7 +22,7 @@ public class ListOperators {
     public static int[] bubbleSort(int[] A){
         if(A==null){
             throw new NullPointerException("Array must not be null");
-            // Mutation #1: change the String "Array must not be null" on the line above to something else
+            // Mutation #1: change the String "Array must not be null" to something else
         }
         //@requires A to be a list of integers of any length
         for(int i=0; i<A.length;i++) {
@@ -30,7 +30,7 @@ public class ListOperators {
                 if(A[j-1] > A[j]) {
                     int swap = A[j-1];      // Mutation #2:  change to <int swap = A[j]>
                     A[j-1] = A[j];
-                    A[j] = swap;            // Mutation #3:  Comment this line
+                    A[j] = swap;
                 }
             }
         }
@@ -40,6 +40,7 @@ public class ListOperators {
 
 
 
+    
 
     /**
      * Method searches for a key value in the input Array and returns an integer value that should be
@@ -58,18 +59,18 @@ public class ListOperators {
             throw new NullPointerException("Array must not be null");
         }
         if (A.length < 1) {
-            throw new IllegalArgumentException("List must not be empty");   // Mutation #4:  Comment this line
+            throw new IllegalArgumentException("List must not be empty");   // Mutation #3:  Comment this line
         }
 
         //@requires A is sorted
         int x = 0;
         int l = 1;
         int r = A.length -1;
-        while( key != A[x] && (l<=r)){      // Mutation #5:  Change "&&" to "||"
+        while( key != A[x] && (l<=r)){      // Mutation #4:  Change "&&" to "||"
         //while( key != A[x] || (l<=r)){    // The test cases will not terminate because of infinite loop
             x = (l + r) / 2;
             if (key < A[x]) {
-                r= x-1;          // Mutation #6: Change to "r= x+1"
+                r= x+1;          // Mutation #5: Change to "r= x+1"
             } else {
                 l= x+1;
             }
@@ -82,7 +83,6 @@ public class ListOperators {
             return -1;
         }
     }
-
 
 
 
@@ -102,7 +102,7 @@ public class ListOperators {
         //@ensures that functions returns true if key exists in A, otherwise false
         int[] sorted = bubbleSort(A);
         int n = binarySearch(sorted, key);
-        return(n!= -1);
+        return(n > -1);     // Mutation #6: Change the predicate "n > -1" to be "n > 0"
     }
 
 }
