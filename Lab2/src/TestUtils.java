@@ -1,11 +1,8 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Random;
 
 
-public class TestUtils {
-    private static String TESTFILES_PATH = "C:\\Users\\jonth\\git\\solRel\\Lab2\\src\\testFiles";
+public class TestUtils { 
     private TestUtils(){}
 
 
@@ -15,66 +12,70 @@ public class TestUtils {
             throw new IllegalArgumentException("Array must not be empty");
         }
         else{
-            sb.append(A.length + ",");
+            sb.append(A.length + ": [");
         }
-        for(int i=0; i<A.length; i++){
-            sb.append(A[i] + ",");
+        for(int i=0; i<A.length-1; i++){
+            sb.append(A[i] + ", ");
         }
-        sb.append("\n");
+        sb.append(A[A.length-1]);
+        sb.append("]\n");
         return sb.toString();
     }
 
+
+
     public static int[] stringToArray(String string) {
-        String[] subArray = string.split(",");
-        int size = Integer.parseInt(subArray[0]);
-        int[] array = new int[size];
-        for(int i=1; i<array.length; i++) {
-            array[i] = Integer.parseInt(subArray[i]);
+        String[] splitLength = string.split(": \\[");
+        int len = Integer.parseInt(splitLength[0]);
+        int[] array = new int[len];
+        String arrayString = splitLength[1];
+        arrayString = arrayString.substring(0, arrayString.length()-1);
+        String[] subA = arrayString.split(", ");
+        for(int i=0; i<len; i++){
+            array[i] = Integer.parseInt(subA[i]);
         }
         return array;
     }
 
 
-    public static void createPairwiseTestArrays(String filename, int size, int integer) {
+
+    public static void createPairwiseTestArrays(String filename, int size, int nonZero) {
         int[] A = new int[size];  //default all zero's
         StringBuilder sb = new StringBuilder();
         sb.append(arrayToString(A));
 
         // 1-wise test
         for(int i=0; i<size; i++) {
-            A[i] = integer;
+            A[i] = nonZero;
             sb.append(arrayToString(A));
             A[i] = 0;
         }
-
         // 2-wise test
         for(int i=0; i<size; i++) {
             A = new int[size];
-            A[i] = integer;
+            A[i] = nonZero;
             for(int k=i+1; k<size; k++) {
-                A[k] = integer;
+                A[k] = nonZero;
                 sb.append(arrayToString(A));
                 A[k] = 0;
             }
         }
-
-        stringToFile(sb.toString(), filename);
+        writeFile(sb.toString(), filename);
     }
 
 
 
-    public static void createRandomTestArrays(String filename, int numberOfArrays, int maxSize, int maxInt, int falseKey) {
+    public static void createRandomizedTestArrays(String filename, int numberOfArrays, int maxSize, int maxInt, int falseKey) {
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
+        int[] array;
 
         for(int i=0; i<numberOfArrays; i++) {
             int size = Math.abs(random.nextInt(maxSize));
             while(size ==0){
                 size = Math.abs(random.nextInt(maxSize));
             }
-            sb.append(size + ",");
-
-            int[] array = new int[size];
+            array = new int[size];
             for(int j=0; j<size; j++) {
                 int element = random.nextInt(maxInt);
                 if(element == falseKey){
@@ -84,21 +85,19 @@ public class TestUtils {
                     element = -element;
                 }
                 array[j] = element;
-                sb.append(element + ",");
             }
-            sb.append("\n");
+            sb.append(arrayToString(array));
         }
-        stringToFile(sb.toString(), filename);
+        writeFile(sb.toString(), filename);
     }
 
-    
-    
-    private static synchronized void stringToFile(String string, String filename){
-        File file = new File(TESTFILES_PATH + File.separator + filename);
+
+
+    static synchronized void writeFile(String string, String filename){
+        File file = new File(filename);
         FileWriter fileWriter;
         try {
             if(!file.exists()){
-                file.createNewFile();
                 fileWriter = new FileWriter(file);
             }
             else{
@@ -111,4 +110,5 @@ public class TestUtils {
             e.printStackTrace();
         }
     }
+
 }
