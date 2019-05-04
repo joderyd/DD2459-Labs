@@ -33,7 +33,8 @@ public class PairwiseTestList {
     public synchronized void testPairwise(RepetitionInfo repetitionInfo){
         if (testArrays.size() > 0) {
             int[] A = testArrays.remove(0);
-            
+            String aString = TestUtils.arrayToString(A);
+
             //First repetition is a special case to make the method logResult() easier
             if(repetitionInfo.getCurrentRepetition() == 1){
                 int sum=0;
@@ -51,13 +52,14 @@ public class PairwiseTestList {
                     falseKeysNotFound++;
                 }
             }
-            
+
             else{
                 boolean F = ListOperators.membership(A, nonZero+1);
                 boolean T = ListOperators.membership(A, nonZero);
                 assertFalse(F);
                 assertTrue(T);
-                logResult(repetitionInfo.getCurrentRepetition(), TestUtils.arrayToString(A), T, F);
+                System.out.println(aString);
+                logResult(repetitionInfo.getCurrentRepetition(), aString, T, F);
             }
         }
     }
@@ -85,6 +87,7 @@ public class PairwiseTestList {
         }
         catch(Exception e){
             assertTrue(e.getClass() == NullPointerException.class);
+            assertTrue(e.getMessage() == "Array must not be null");
         }
     }
 
