@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.Random;
 
 
-public class TestUtils { 
+public class TestUtils {
     private TestUtils(){}
 
 
-    public static String arrayToString(int[] A){
+    public static synchronized String arrayToString(int[] A){
         StringBuilder sb = new StringBuilder();
         if(A.length < 1){
             throw new IllegalArgumentException("Array must not be empty");
@@ -55,7 +55,7 @@ public class TestUtils {
             A = new int[size];
             A[i] = nonZero;
             for(int k=i+1; k<size; k++) {
-                A[k] = nonZero;
+                A[k] = 0-nonZero;
                 sb.append(arrayToString(A));
                 A[k] = 0;
             }
