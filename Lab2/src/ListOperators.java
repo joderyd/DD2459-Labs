@@ -40,7 +40,7 @@ public class ListOperators {
 
 
 
-    
+
 
     /**
      * Method searches for a key value in the input Array and returns an integer value that should be
@@ -70,7 +70,7 @@ public class ListOperators {
         //while( key != A[x] || (l<=r)){    // The test cases will not terminate because of infinite loop
             x = (l + r) / 2;
             if (key < A[x]) {
-                r= x+1;          // Mutation #5: Change to "r= x+1"
+                r= x-1;          // Mutation #5: Change to "r= x+1"
             } else {
                 l= x+1;
             }
