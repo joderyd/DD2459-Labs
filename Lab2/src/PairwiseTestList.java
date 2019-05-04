@@ -29,7 +29,7 @@ public class PairwiseTestList {
     }
 
 
-    @RepeatedTest(212)
+    @RepeatedTest(211)
     public synchronized void testPairwise(RepetitionInfo repetitionInfo){
         if (testArrays.size() > 0) {
             int[] A = testArrays.remove(0);
@@ -52,13 +52,11 @@ public class PairwiseTestList {
                     falseKeysNotFound++;
                 }
             }
-
             else{
                 boolean F = ListOperators.membership(A, nonZero+1);
                 boolean T = ListOperators.membership(A, nonZero);
                 assertFalse(F);
                 assertTrue(T);
-                System.out.println(aString);
                 logResult(repetitionInfo.getCurrentRepetition(), aString, T, F);
             }
         }
