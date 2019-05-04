@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RandomTestList {
     static final String FILENAME_RANDOM = "src/testFiles/randomizedTests.txt";
-    static int numOfArrays = 100;
+    static int numOfArrays = 220;
     static int maxInt = 300;
     static ArrayList<int[]> testArrays;
     static StringBuilder stringBuilder;
@@ -52,17 +52,19 @@ public class RandomTestList {
     }
 
 
-    @RepeatedTest(50)
+    @RepeatedTest(105)
     public synchronized void falseMembershipTest(RepetitionInfo repetitionInfo) {
         if (testArrays.size() > 0) {
             int[] A = testArrays.remove(0);
+            String unsortedString = TestUtils.arrayToString(A);
             int falseKey = maxInt+1;
             boolean F = ListOperators.membership(A, maxInt+1);
             assertFalse(F);
 
             // Logging test result
-            stringBuilder.append("\n\nTest repetition #" + repetitionInfo.getCurrentRepetition() +
-                    "\nkey= " + maxInt+1 + "\nArray= " + TestUtils.arrayToString(A));
+            stringBuilder.append("\n\nTest repetition #" +
+                    repetitionInfo.getCurrentRepetition() + "\nUnsorted Array= " +
+                    TestUtils.arrayToString(A) + "Sorted Array= " + unsortedString + "\n");
             if(!F){
                 stringBuilder.append("key = " + falseKey + " was successfully not found!\n");
                 falseKeysNotFound ++;
@@ -79,18 +81,20 @@ public class RandomTestList {
 
 
 
-    @RepeatedTest(50)
+    @RepeatedTest(105)
     public synchronized void trueMembershipTest(RepetitionInfo repetitionInfo){
         if(testArrays.size()>0) {
             int[] A = testArrays.remove(0);
+            String unsortedString = TestUtils.arrayToString(A);
             int idx = new Random().nextInt(A.length);
             int key = A[idx];
             boolean T = ListOperators.membership(A, key);
             assertTrue(T);
 
             // Logging test result
-            stringBuilder.append("\n\nTest repetition #" + repetitionInfo.getCurrentRepetition() +
-                    "\nkey= " + key + "\nArray= " + TestUtils.arrayToString(A));
+            stringBuilder.append("\n\nTest repetition #" +
+                    repetitionInfo.getCurrentRepetition() + "\nUnsorted Array= " +
+                    TestUtils.arrayToString(A) + "Sorted Array= " + unsortedString + "\n");
             if(T){
                 stringBuilder.append("key = " + key + " was successfully found!\n");
                 trueKeysFound ++;
