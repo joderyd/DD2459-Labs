@@ -1,6 +1,57 @@
 [Link to specification as pdf](misc/DD2459-lab3_2016.pdf)
 
 
+#Exercises.
+1. Recall	the	2-bit	shift	register discussed	in	the	lecture	notes	(Lecture	6).	Draw	a	model	of
+this	system	using	the	UML	2.4	Statechart	language.	Hint:	you	should	use	a graphics	tool,	
+such	as	Powerpoint	or	any similar tool.
+
+2. Consider	the	file	bitshift.smv.	This	file	is	an	incomplete	model	of	the	2-bit	shift	
+register.	In	particular,	the	next	state	functions	for	Bit1 and	Bit2 are	missing.	Complete	
+these	definitions.	Then	execute	the	file	using	the	command	
+NuSMV –bmc bitshift.smv.
+Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	completed	
+definitions	are	actually	correct. Which	specific	output	data	confirms	the	correctness	of	your	
+definitions?
+
+3. Consider	the	simple	car-controller discussed	in	the	lecture	notes.	Download	the file	
+carcontroller.smv from	the	course	web	page.	You	will	now	generate	three test	cases	
+that	achieve	100%	node coverage (NC) for	the	CC.	We	want	to	be	sure	we	reach	each	node	
+(state).	There	are	3	nodes	in	total.
+
+  (a) Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	
+NuSMV –bmc carcontroller.smv
+Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	
+generates.	Clearly	this	achieves	33%	NC!
+
+  (b) Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	
+and	output	predictions.	Hint:	you	could	e.g.	transfer	the	sequences	of	values	to	
+an	MS Excel spreadsheet	or	similar.	Remember	to	store	the	test	requirement	
+alongside	the	test	case	for	future	reference.
+
+  (c) Write	out	2	additional	trap	properties needed	for	100%	NC	as	LTL	formulas	so	
+that	you	achieve	100%	NC.	Then	execute	the	file	again	and	repeat	step	(b)	above	
+to	extract	the	2	additional	test	cases.	You	should	now	have	achieved	100%	NC!
+
+
+4.	Continuing	with	the	car-controller	example,	we	are	going	to	generate	a	set	of	test	cases	
+which	achieve	100% edge	coverage (EC).	We	want	to	be	sure	we	traverse	each	edge	
+between	any	pair	of	nodes.	There	are	6	edges	in	total.
+  (a) Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	
+NuSMV –bmc carcontroller.smv
+Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	
+generates.	Clearly	this	achieves	16%	EC!
+  (b) Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	
+and	output	predictions.	Hint:	you	could	e.g.	transfer	the	sequences	of	values	to	
+an	MS Excel spreadsheet	or	similar.	Remember	to	store	the	test	requirement	
+alongside	the	test	case	for	future	reference.
+  (c) Write	out	5	additional	trap	properties needed	for	100%	EC	as	LTL	formulas	so	
+that	you	achieve	100%	EC.	Then	execute	the	file	again	and	repeat	step	(b)	above	
+to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
+
+
+
+
 ![page 1](misc/page1.jpg)
 
 
