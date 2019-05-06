@@ -1,4 +1,4 @@
-![page 1](1.jpg)
+![page 1](misc/page1.jpg)
 
 
-![page 2](2.jpg)
+![page 2](misc/page2.jpg)
