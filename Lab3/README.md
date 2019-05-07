@@ -19,8 +19,8 @@ Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	complet
 (state).	There	are	3	nodes	in	total.  
   
   
-  **(a)** Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	
-NuSMV –bmc carcontroller.smv
+  **(a)** Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	 
+`NuSMV –bmc carcontroller.smv`  
 Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	
 generates.	Clearly	this	achieves	33%	NC!  
 
