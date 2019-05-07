@@ -33,8 +33,11 @@ alongside	the	test	case	for	future	reference.
    
    
   * __(c)__ Write	out	2	additional	trap	properties needed	for	100%	NC	as	LTL	formulas	so	that	you	achieve	100%	NC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	2	additional	test	cases.	You	should	now	have	achieved	100%	NC!  
-   
-          
+  
+  
+  **  **  
+  
+
 **4.**	Continuing	with	the	car-controller	example,	we	are	going	to	generate	a	set	of	test	cases	which	achieve	100% edge	coverage (EC).	We	want	to	be	sure	we	traverse	each	edge	between	any	pair	of	nodes.	There	are	6	edges	in	total.  
 
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command `NuSMV –bmc carcontroller.smv`  
