@@ -23,6 +23,13 @@ Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	complet
   
 **3.** Consider	the	simple	**_car-controller_** discussed	in	the	lecture	notes.	Download	the file	**carcontroller.smv** from	the	course	web	page.	You	will	now	generate	three test	cases	that	achieve	**100%	node coverage** _(NC)_ for	the	CC.	We	want	to	be	sure	we	reach	each	node	
 (state).	There	are	3	nodes	in	total.  
+
+
+
+<p align="center">
+  <img width="560" height="400" src="misc/carcontroller_UML.png">
+</p>
+
   
   
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	 
