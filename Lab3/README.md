@@ -3,7 +3,7 @@
 **1.** Recall	the	**2-bit	shift	register** discussed	in	the	lecture	notes	(Lecture	6).	Draw	a	model	of
 this	system	using	the	UML	2.4	Statechart	language.	**Hint:**	you	should	use	a graphics	tool,	
 such	as	Powerpoint	or	any similar tool.
-...[UML diagram of 2-bit shift register](misc/2bitshift-UML.PNG)
+..*[UML diagram of 2-bit shift register](misc/2bitshift-UML.PNG)
 
 
 
@@ -15,7 +15,7 @@ NuSMV –bmc bitshift.smv.
 Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	completed	
 definitions	are	actually	correct. Which	specific	output	data	confirms	the	correctness	of	your	
 definitions?
-...[Bitshift_output](misc/bitshift.smv.output)
+..*[Bitshift_output](misc/bitshift.smv.output)
 
 
 
