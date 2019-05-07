@@ -11,13 +11,17 @@ such	as	Powerpoint	or	any similar tool.
 
 
 
-**2.** Consider	the	file	**bitshift.smv**.	This	file	is	an	incomplete	model	of	the	_2-bit	shift	
-register_.	In	particular,	the	next	state	functions	for	Bit1 and	Bit2 are	missing.	Complete	
-these	definitions.	Then	execute	the	file	using	the	command	
+
+**2.** Consider	the	file	**bitshift.smv**.	This	file	is	an	incomplete	model	of	the	**_2-bit	shift	
+register_**.	In	particular,	the	next	state	functions	for	_Bit1_ and	_Bit2_ are	_missing_.	**Complete	
+these	definitions.**	Then	execute	the	file	using	the	command	
 NuSMV –bmc bitshift.smv.
 Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	completed	
 definitions	are	actually	correct. Which	specific	output	data	confirms	the	correctness	of	your	
 definitions?
+
+[Bitshift_output](misc/bitshift.smv.output)
+
 
 3. Consider	the	simple	car-controller discussed	in	the	lecture	notes.	Download	the file	
 carcontroller.smv from	the	course	web	page.	You	will	now	generate	three test	cases	
