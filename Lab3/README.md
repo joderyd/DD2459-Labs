@@ -32,7 +32,7 @@ Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	generates
  [Original carcontroller.smv output](misc/carcontroller3a.smv.output)  
 
 
-* _UML statechart of carcontroller_  
+* _Fig 1. UML statechart of carcontroller:_  
 <p align="center">
   <img width="600" height="400" src="misc/carcontroller_UML.png">
 </p>  
@@ -42,6 +42,8 @@ Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	generates
 
   * __(b)__ Extract	from	this	_counterexample_	a	suitable	__test	case__,	consisting	of	input	values	
 and	output	predictions.	Hint:	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar.	Remember	to	store	the	test	_requirement_	alongside	the	test	case	for	future	reference.  
+__Fig 1__ shows a UML statechart diagram of carcontroller, with 3 nodes representing the three states, and 6 edges (a-E) representing transitions depening on the boolean input variables _brake_ and _accelerate_.  
+The first requirement is that
    
    
   * __(c)__ Write	out	2	additional	trap	properties needed	for	100%	NC	as	LTL	formulas	so	that	you	achieve	100%	NC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	2	additional	test	cases.	You	should	now	have	achieved	100%	NC!  
