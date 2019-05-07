@@ -28,7 +28,7 @@ Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	complet
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	 
 `NuSMV –bmc carcontroller.smv`  
 Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	generates.	Clearly	this	achieves	33%	NC!  
- [Original carcontroller.smv output](misc/carcontrollerA.smv.output)  
+ [Original carcontroller.smv output](misc/carcontroller3a.smv.output)  
 
 
 
@@ -48,6 +48,8 @@ alongside	the	test	case	for	future	reference.
 
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command `NuSMV –bmc carcontroller.smv`  
 Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates.	Clearly	this	achieves	16%	EC!  
+[16% EC output](misc/carcontroller4a.smv.output)  
+
   * __(b)__ Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	and	output	predictions.	__Hint:__	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar. Remember	to	store	the	test requirement alongside	the	test	case	for	future	reference.  
   * __(c)__ Write	out	5	additional	trap	properties needed	for	100%	EC	as	LTL	formulas	so	that	you	achieve	100%	EC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
 
