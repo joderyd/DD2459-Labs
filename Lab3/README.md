@@ -76,6 +76,15 @@ Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates
 [16% EC output (+ 3 cases for 100% NC)](misc/carcontroller4a.smv.output)  
 
   * __(b)__ Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	and	output	predictions.	__Hint:__	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar. Remember	to	store	the	test requirement alongside	the	test	case	for	future	reference.  
+  
+  _Test requirement_: state= `stop` & _accelerate_= true
+  
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | false | false  
+1 | `slow` | true | false   
+
+
   * __(c)__ Write	out	5	additional	trap	properties needed	for	100%	EC	as	LTL	formulas	so	that	you	achieve	100%	EC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
 
 
