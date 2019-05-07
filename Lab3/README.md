@@ -45,6 +45,10 @@ The first _requirement_ is that state=`stop`, which is the initial value, and ac
    
    
   * __(c)__ Write	out	2	additional	trap	properties needed	for	100%	NC	as	LTL	formulas	so	that	you	achieve	100%	NC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	2	additional	test	cases.	You	should	now	have	achieved	100%	NC!  
+  [patch for carcontroller with 2 additional cases](carcontroller_patch1.diff)  
+  
+  
+  
   The second _requirement_ is that state=`slow`  
   
   *n* | _state_ | _accelerate_ | _brake_
@@ -59,7 +63,7 @@ The third _requirement_ is that state=`fast`
 --- | --- | --- | ---
 0 | `stop` | false | false  
 1 | `slow` | true | false  
-2 | `fast` | true | false
+2 | `fast` | **true** | false
   
   
   **  **  
@@ -69,7 +73,7 @@ The third _requirement_ is that state=`fast`
 
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command `NuSMV –bmc carcontroller.smv`  
 Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates.	Clearly	this	achieves	16%	EC!  
-[16% EC output](misc/carcontroller4a.smv.output)  
+[16% EC output (+ 3 cases for 100% NC)](misc/carcontroller4a.smv.output)  
 
   * __(b)__ Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	and	output	predictions.	__Hint:__	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar. Remember	to	store	the	test requirement alongside	the	test	case	for	future	reference.  
   * __(c)__ Write	out	5	additional	trap	properties needed	for	100%	EC	as	LTL	formulas	so	that	you	achieve	100%	EC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
