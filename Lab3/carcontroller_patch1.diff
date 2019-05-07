@@ -1,0 +1,19 @@
+--- carcontroller0.smv  2019-05-07 14:50:05.284172600 +0200
++++ carcontroller1.smv  2019-05-07 14:51:16.866761300 +0200
+@@ -41,6 +41,16 @@
+
+ -- Question 1. Write down the remaining 2 NC trap properties yourself
+
++-- Second node:
++LTLSPEC
++       G( !(state = slow))
++
++-- Third node:
++LTLSPEC
++       G( !(state = fast))
++
++
++
+ -- 1 trap property for edge coverage (which edge?)
+ LTLSPEC
+        G( state=stop & accelerate -> X( !(state=slow) ) )
