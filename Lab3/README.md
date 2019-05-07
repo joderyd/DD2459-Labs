@@ -1,7 +1,7 @@
 
 ### Exercises  
 **1.** Recall	the	**2-bit	shift	register** discussed	in	the	lecture	notes	(Lecture	6).	Draw	a	model	of this	system	using	the	UML	2.4	Statechart	language.	**Hint:**	you	should	use	a graphics	tool,	such	as	Powerpoint	or	any similar tool.  
--[UML diagram of 2-bit shift register](misc/2bitshift-UML.PNG)  
+* [UML diagram of 2-bit shift register](misc/2bitshift-UML.PNG)  
   
   
   **  **  
@@ -10,7 +10,7 @@
 **2.** Consider	the	file	**bitshift.smv**.	This	file	is	an	incomplete	model	of	the	**_2-bit	shift	register_**.	In	particular,	the	next	state	functions	for	_Bit1_ and	_Bit2_ are	_missing_.	**Complete these	definitions.**	Then	execute	the	file	using	the	command  
 `NuSMV –bmc bitshift.smv`  
 Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	completed	definitions	are	actually	correct. Which specific	output	data	confirms	the	correctness	of	your definitions?  
--[Bitshift_output](misc/bitshift.smv.output)  
+* [Bitshift_output](misc/bitshift.smv.output)  
   
   
   **  **  
@@ -21,8 +21,8 @@ Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	complet
   
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command	 
 `NuSMV –bmc carcontroller.smv`  
-Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	
-generates.	Clearly	this	achieves	33%	NC!  
+Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	generates.	Clearly	this	achieves	33%	NC!  
+ [Original carcontroller.smv output](misc/carcontrollerA.smv.output)  
 
 
 
