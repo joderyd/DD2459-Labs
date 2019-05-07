@@ -1,6 +1,3 @@
-[Link to specification as pdf](misc/DD2459-lab3_2016.pdf)
-
-
 
 ### Exercises
 **1.** Recall	the	**2-bit	shift	register** discussed	in	the	lecture	notes	(Lecture	6).	Draw	a	model	of
@@ -60,6 +57,7 @@ to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
 
 
 
+[Link to specification as pdf](misc/DD2459-lab3_2016.pdf)
 
 ![page 1](misc/page1.jpg)
 
