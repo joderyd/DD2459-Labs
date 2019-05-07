@@ -1,5 +1,6 @@
+###### [(Link to full specification as pdf)](misc/DD2459-lab3_2016.pdf)
 
-### Exercises  
+## Exercises  
 
   
   **  **  
@@ -89,5 +90,5 @@ Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates
 
 
 
-[Link to specification as pdf](misc/DD2459-lab3_2016.pdf)
+
 
