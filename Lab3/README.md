@@ -6,6 +6,9 @@
 this	system	using	the	UML	2.4	Statechart	language.	Hint:	you	should	use	a graphics	tool,	
 such	as	Powerpoint	or	any similar tool.
 
+[UML diagram of 2-bit shift register](misc/2bitshift-UML.PNG)
+
+
 2. Consider	the	file	bitshift.smv.	This	file	is	an	incomplete	model	of	the	2-bit	shift	
 register.	In	particular,	the	next	state	functions	for	Bit1 and	Bit2 are	missing.	Complete	
 these	definitions.	Then	execute	the	file	using	the	command	
