@@ -6,7 +6,7 @@
   
   **  **  
   
-**2.** Consider	the	file	**bitshift.smv**.	This	file	is	an	incomplete	model	of	the	**_2-bit	shift	register_**.	In	particular,	the	next	state	functions	for	_Bit1_ and	_Bit2_ are	_missing_.	**Complete these	definitions.**	Then	execute	the	file	using	the	command	 
+**2.** Consider	the	file	**bitshift.smv**.	This	file	is	an	incomplete	model	of	the	**_2-bit	shift	register_**.	In	particular,	the	next	state	functions	for	_Bit1_ and	_Bit2_ are	_missing_.	**Complete these	definitions.**	Then	execute	the	file	using	the	command
   
 NuSMV –bmc bitshift.smv.  
 Note	down	carefully	the	output	of	NuSMV,	and	use	it	to	confirm	that	your	completed	definitions	are	actually	correct. Which specific	output	data	confirms	the	correctness	of	your definitions?  
