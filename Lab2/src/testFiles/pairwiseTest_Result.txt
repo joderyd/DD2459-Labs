@@ -1,0 +1,1488 @@
+
+
+~PAIRWISE TEST RESULT~
+--- summary ---
+trueKeysFound = 211
+trueKeysNotFound = 0
+falseKeysFound = 0
+falseKeysNotFound = 211
+-----------------------------------
+
+DETAILED TEST RESULT:
+----------------------------------
+
+
+Test repetition #1
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 0 was successfully found!
+key = 3 was successfully not found!
+
+
+Test repetition #2
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #3
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #4
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #5
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #6
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #7
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #8
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #9
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #10
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #11
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #12
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #13
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #14
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #15
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #16
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #17
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #18
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #19
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #20
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #21
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #22
+TestList = 20: [3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #23
+TestList = 20: [3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #24
+TestList = 20: [3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #25
+TestList = 20: [3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #26
+TestList = 20: [3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #27
+TestList = 20: [3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #28
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #29
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #30
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #31
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #32
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #33
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #34
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #35
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #36
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #37
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #38
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #39
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #40
+TestList = 20: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #41
+TestList = 20: [0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #42
+TestList = 20: [0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #43
+TestList = 20: [0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #44
+TestList = 20: [0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #45
+TestList = 20: [0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #46
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #47
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #48
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #49
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #50
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #51
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #52
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #53
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #54
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #55
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #56
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #57
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #58
+TestList = 20: [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #59
+TestList = 20: [0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #60
+TestList = 20: [0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #61
+TestList = 20: [0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #62
+TestList = 20: [0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #63
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #64
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #65
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #66
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #67
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #68
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #69
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #70
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #71
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #72
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #73
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #74
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #75
+TestList = 20: [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #76
+TestList = 20: [0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #77
+TestList = 20: [0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #78
+TestList = 20: [0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #79
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #80
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #81
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #82
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #83
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #84
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #85
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #86
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #87
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #88
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #89
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #90
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #91
+TestList = 20: [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #92
+TestList = 20: [0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #93
+TestList = 20: [0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #94
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #95
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #96
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #97
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #98
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #99
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #100
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #101
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #102
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #103
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #104
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #105
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #106
+TestList = 20: [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #107
+TestList = 20: [0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #108
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #109
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #110
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #111
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #112
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #113
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #114
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #115
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #116
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #117
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #118
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #119
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #120
+TestList = 20: [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #121
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #122
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #123
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #124
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #125
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #126
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #127
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #128
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #129
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #130
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #131
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #132
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #133
+TestList = 20: [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #134
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #135
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #136
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #137
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #138
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #139
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #140
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #141
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #142
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #143
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #144
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #145
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #146
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #147
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #148
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #149
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #150
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #151
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #152
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #153
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #154
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #155
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #156
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #157
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #158
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #159
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #160
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #161
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #162
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #163
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #164
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #165
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #166
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #167
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #168
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #169
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #170
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #171
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #172
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #173
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #174
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #175
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #176
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #177
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #178
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #179
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #180
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #181
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #182
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #183
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #184
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #185
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #186
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #187
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #188
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #189
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #190
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #191
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #192
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #193
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #194
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #195
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #196
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #197
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #198
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #199
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #200
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #201
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #202
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #203
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #204
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #205
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #206
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #207
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #208
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #209
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3, 0]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #210
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
+
+
+Test repetition #211
+TestList = 20: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, -3]
+key = 4 was successfully not found!
+key = 3 was successfully found!
+=====================
