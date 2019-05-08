@@ -8,8 +8,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RandomTestList {
     static final String FILENAME_RANDOM = "src/testFiles/randomizedTests.txt";
-    static int numOfArrays = 220;
-    static int maxInt = 300;
+    static final int NUM_OF_ARRAYS = 220;
+    static final int MAX_INT = 300;
+    static final int MAX_ARRAY_SIZE = 20;
+    static final int FALSE_KEY = 5;
     static ArrayList<int[]> testArrays;
     static StringBuilder stringBuilder;
     static int trueKeysFound, trueKeysNotFound;
@@ -28,8 +30,8 @@ public class RandomTestList {
         if(file.exists()){
             file.delete();
         }
-        TestUtils.createRandomizedTestArrays(FILENAME_RANDOM, numOfArrays, 20, maxInt, 5);
-        readTests(FILENAME_RANDOM, 200);
+        TestUtils.createRandomizedTestArrays(FILENAME_RANDOM, NUM_OF_ARRAYS, MAX_ARRAY_SIZE, MAX_INT, FALSE_KEY);
+        readTests(FILENAME_RANDOM, NUM_OF_ARRAYS);
     }
 
 
@@ -57,23 +59,22 @@ public class RandomTestList {
         if (testArrays.size() > 0) {
             int[] A = testArrays.remove(0);
             String unsortedString = TestUtils.arrayToString(A);
-            int falseKey = maxInt+1;
-            boolean F = ListOperators.membership(A, maxInt+1);
-            assertFalse(F);
+            boolean F = ListOperators.membership(A, MAX_INT +1);
 
             // Logging test result
             stringBuilder.append("\n\nTest repetition #" +
-                    repetitionInfo.getCurrentRepetition() + "\nUnsorted Array= " +
+                    repetitionInfo.getCurrentRepetition() + "\n(falseMembershipTest)\nUnsorted Array= " +
                     TestUtils.arrayToString(A) + "Sorted Array= " + unsortedString + "\n");
             if(!F){
-                stringBuilder.append("key = " + falseKey + " was successfully not found!\n");
+                stringBuilder.append("key = " + FALSE_KEY + " was successfully not found!\n");
                 falseKeysNotFound ++;
             }
             else{
-                stringBuilder.append("key = " + falseKey + " was unsuccessfully found!\n");
+                stringBuilder.append("key = " + FALSE_KEY + " was unsuccessfully found!\n");
                 falseKeysFound ++;
             }
             stringBuilder.append("=====================\n");
+            assertFalse(F);
         }
     }
 
@@ -89,11 +90,10 @@ public class RandomTestList {
             int idx = new Random().nextInt(A.length);
             int key = A[idx];
             boolean T = ListOperators.membership(A, key);
-            assertTrue(T);
 
             // Logging test result
             stringBuilder.append("\n\nTest repetition #" +
-                    repetitionInfo.getCurrentRepetition() + "\nUnsorted Array= " +
+                    repetitionInfo.getCurrentRepetition() + "\n(trueMembershipTest)\nUnsorted Array= " +
                     TestUtils.arrayToString(A) + "Sorted Array= " + unsortedString + "\n");
             if(T){
                 stringBuilder.append("key = " + key + " was successfully found!\n");
@@ -104,6 +104,7 @@ public class RandomTestList {
                 trueKeysNotFound ++;
             }
             stringBuilder.append("========================\n");
+            assertTrue(T);
         }
     }
 
@@ -125,25 +126,24 @@ public class RandomTestList {
 
     @Test
     public void testNullMembership(){
-        int[] a = new int[]{1,2,3};
-        assertNotNull(a);
         try{
             ListOperators.membership(null, 1);
         }
         catch(Exception e){
             assertTrue(e.getClass() == NullPointerException.class);
+            assertTrue(e.getMessage() == "Array must not be null");
         }
     }
 
 
     @AfterAll
     static void printResult(){
-        File file = new File("src/testFiles/randomizedTest_RESULT.txt");
+        File file = new File("src/testFiles/randomizedTest_Result.txt");
         if(file.exists()){
             file.delete();
         }
         try {
-            FileWriter fileWriter = new FileWriter(new File("src/testFiles/randomizedTest_RESULT.txt"), true);
+            FileWriter fileWriter = new FileWriter(new File("src/testFiles/randomizedTest_Result.txt"), true);
             String resultSummary = "\n\n~ RANDOMIZED TEST RESULT~" +
                     "\n--- summary ---" +
                     "\ntrueKeysFound= " + trueKeysFound +
