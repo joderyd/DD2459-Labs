@@ -73,6 +73,10 @@ The third _requirement_ is that state=`fast`
   
 
 **4.**	Continuing	with	the	car-controller	example,	we	are	going	to	generate	a	set	of	test	cases	which	achieve	100% edge	coverage (EC).	We	want	to	be	sure	we	traverse	each	edge	between	any	pair	of	nodes.	There	are	6	edges	in	total.  
+<p align="center">
+  <img width="660" height="350" src="misc/carcontroller_UML.png">
+</p>  
+
 
   * __(a)__ Run	NuSMV	on	the	existing	file	carcontroller.smv with	the	command `NuSMV –bmc carcontroller.smv`  
 Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates.	Clearly	this	achieves	16%	EC!  
@@ -81,7 +85,7 @@ Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates
   * __(b)__ Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	and	output	predictions.	__Hint:__	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar. Remember	to	store	the	test requirement alongside	the	test	case	for	future	reference.  
   
   _Test requirement_ 1: state= `stop` & _accelerate_= true  
-  _Expected output_: state=`slow`
+  _Expected output_: state=`slow` (Edge **A**)  
   
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -93,7 +97,7 @@ Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates
 
 
 _Test requirement_ 2: state= `slow` & _accelerate_= true & _brake_= false  
-_Expected output_: state=`fast`
+_Expected output_: state=`fast` (Edge **B**)  
 
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -103,7 +107,7 @@ _Expected output_: state=`fast`
   
   
 _Test requirement_ 3: state= `slow` & _brake_= true  
-_Expected output_: state=`stop`
+_Expected output_: state=`stop` (Edge **C**)  
 
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -113,7 +117,7 @@ _Expected output_: state=`stop`
 
 
 _Test requirement_ 4: state= `slow` & _accelerate_= false & _brake_= false  
-_Expected output_: state=`stop`
+_Expected output_: state=`stop` (Edge **D**)  
 
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -123,7 +127,7 @@ _Expected output_: state=`stop`
 
 
 _Test requirement_ 5: state= `fast` & _accelerate_= false & _brake_= false  
-_Expected output_: state=`slow`
+_Expected output_: state=`slow` (Edge **E**)  
 
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -134,7 +138,7 @@ _Expected output_: state=`slow`
 
 
 _Test requirement_ 6: state= `fast` & _brake_= true  
-_Expected output_: state=`stop`
+_Expected output_: state=`stop` (Edge **F**)  
 
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -142,6 +146,3 @@ _Expected output_: state=`stop`
 1 | `slow` | true | false  
 2 | `fast` | false | true  
 3 | `stop` | -- | --  
-
-
-
