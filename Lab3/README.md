@@ -37,7 +37,9 @@ Write	down	the	counterexample to	the	1	NC	trap	property which	the	tool	generates
   * __(b)__ Extract	from	this	_counterexample_	a	suitable	__test	case__,	consisting	of	input	values	
 and	output	predictions.	Hint:	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar.	Remember	to	store	the	test	_requirement_	alongside	the	test	case	for	future	reference.  
 
-The first _requirement_ is that state=`stop`, which is the initial value, and accelerate=_false_ & brake=_false_  
+The first _requirement_: state=`stop`, which is the initial value, and accelerate=_false_ & brake=_false_  
+_Expected output of next state_: `stop`  
+
 
 *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
@@ -50,21 +52,21 @@ The first _requirement_ is that state=`stop`, which is the initial value, and ac
   
   
   
-  The second _requirement_ is that state=`slow`  
+  The second _requirement_: state=`slow`  
   
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
-0 | `stop` | false | false  
-1 | `slow` | **true** | false  
+0 | `stop` | true | false  
+1 | `slow` | -- | --  
   
   
 The third _requirement_ is that state=`fast`  
   
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
-0 | `stop` | false | false  
+0 | `stop` | true | false  
 1 | `slow` | true | false  
-2 | `fast` | **true** | false
+2 | `fast` | -- | --
   
   
   **  **  
@@ -78,17 +80,68 @@ Write	down	the	counterexample to	the	1	EC	trap	property which	the	tool	generates
 
   * __(b)__ Extract	from	this	counterexample	a	suitable	test	case,	consisting	of	input	values	and	output	predictions.	__Hint:__	you	could	e.g.	transfer	the	sequences	of	values	to	an	MS Excel spreadsheet	or	similar. Remember	to	store	the	test requirement alongside	the	test	case	for	future	reference.  
   
-  _Test requirement_: state= `stop` & _accelerate_= true
+  _Test requirement_ 1: state= `stop` & _accelerate_= true  
+  _Expected output_: state=`slow`
   
   *n* | _state_ | _accelerate_ | _brake_
 --- | --- | --- | ---
-0 | `stop` | false | false  
-1 | `slow` | true | false   
+0 | `stop` | true | false  
+1 | `slow` | -- | --   
 
 
   * __(c)__ Write	out	5	additional	trap	properties needed	for	100%	EC	as	LTL	formulas	so	that	you	achieve	100%	EC.	Then	execute	the	file	again	and	repeat	step	_(b)_	above	to	extract	the	5 additional	test	cases.	You	should	now	have	achieved	100%	EC!
 
 
+_Test requirement_ 2: state= `slow` & _accelerate_= true & _brake_= false  
+_Expected output_: state=`fast`
+
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | true | false  
+1 | `slow` | true | false  
+2 | `fast` | -- | --  
+  
+  
+_Test requirement_ 3: state= `slow` & _brake_= true  
+_Expected output_: state=`stop`
+
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | true | false  
+1 | `slow` | false | true  
+2 | `stop` | -- | --   
+
+
+_Test requirement_ 4: state= `slow` & _accelerate_= false & _brake_= false  
+_Expected output_: state=`stop`
+
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | true | false  
+1 | `slow` | false | false  
+2 | `stop` | -- | --   
+
+
+_Test requirement_ 5: state= `fast` & _accelerate_= false & _brake_= false  
+_Expected output_: state=`slow`
+
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | true | false  
+1 | `slow` | true | false  
+2 | `fast` | false | false  
+3 | `slow` | -- | --  
+
+
+_Test requirement_ 6: state= `fast` & _brake_= true  
+_Expected output_: state=`stop`
+
+  *n* | _state_ | _accelerate_ | _brake_
+--- | --- | --- | ---
+0 | `stop` | true | false  
+1 | `slow` | true | false  
+2 | `fast` | false | true  
+3 | `stop` | -- | --  
 
 
 
