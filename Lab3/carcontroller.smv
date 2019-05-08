@@ -35,15 +35,48 @@ ASSIGN
 		      TRUE : state;
 	esac;
 
--- 1 trap property for node coverage (which node?)
+-- Node 1: state=stop
 LTLSPEC 
 	G( !(state = stop))
 
--- Question 1. Write down the remaining 2 NC trap properties yourself
+-- Node 2: state=slow
+LTLSPEC
+       G( !(state = slow))
 
--- 1 trap property for edge coverage (which edge?)
+-- Node 3: state=fast
+LTLSPEC
+       G( !(state = fast))
+
+
+
+-- The UML-diagram (misc/carcontroller_UML.png) is linked in the README.md
+-- 6 edges labeled A-E will be covered in the following section:
+
+-- Edge A:
 LTLSPEC 
 	G( state=stop & accelerate -> X( !(state=slow) ) )
 
--- Question 2. Write down the remaining 5 EC trap properties yourself
 
+-- Edge B:
+LTLSPEC
+	G( (state=slow & accelerate & !brake) -> X( !(state=fast) ) )
+
+
+-- Edge C:
+LTLSPEC
+	G( state=slow & brake -> X( !(state=stop) ) )
+
+
+-- Edge D:
+LTLSPEC
+	G( (state=slow & !accelerate & !brake) -> X( !(state=stop) ) )
+
+
+-- Edge E:
+LTLSPEC
+	G( (state=fast & !accelerate &!brake) -> X( !(state=slow) ) )
+
+
+-- Edge F:
+LTLSPEC
+	G( state=fast & brake -> X( !(state=stop) ) )
