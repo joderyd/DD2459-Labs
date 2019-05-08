@@ -1,3 +1,0 @@
-C:\Users\jonth\git\solRel\Lab2\src\testFiles\test.txt
-
-testFiles/test.txt
