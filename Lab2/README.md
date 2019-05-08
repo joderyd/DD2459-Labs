@@ -4,4 +4,4 @@
 [Condensation graph](misc/Lab2-Condensation_graph.pdf)
 
 
-[Table of mutations](misc/mutation_table.pdf)
+[Table of mutations](misc/mutation_graph.pdf)
