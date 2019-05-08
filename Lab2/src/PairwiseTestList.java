@@ -6,12 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PairwiseTestList {
     static final String FILENAME_PAIRWISE = "src/testFiles/pairwiseTests.txt";
+    static final int NON_ZERO = 3;
+    static final int MAX_SIZE = 20;
     static StringBuilder stringBuilder;
     static ArrayList<int[]> testArrays;
     static int trueKeysFound, trueKeysNotFound;
     static int falseKeysNotFound, falseKeysFound;
-    static final int nonZero = 3;
-    private PairwiseTestList(){}
+
 
     @BeforeAll
     public static void init(){
@@ -22,9 +23,10 @@ public class PairwiseTestList {
         testArrays = new ArrayList<>();
         stringBuilder = new StringBuilder();
         File file = new File(FILENAME_PAIRWISE);
-        if(!file.exists()){
-            TestUtils.createPairwiseTestArrays(FILENAME_PAIRWISE, 20, nonZero);
+        if(file.exists()){
+            file.delete();
         }
+        TestUtils.createPairwiseTestArrays(FILENAME_PAIRWISE, MAX_SIZE, NON_ZERO);
         readTests(FILENAME_PAIRWISE);
     }
 
@@ -44,20 +46,20 @@ public class PairwiseTestList {
                     }
                 }
                 boolean T = sum == A.length;
-                assertTrue(T);
                 if(T) {
                     stringBuilder.append("\n\nTest repetition #" + 1 + "\nTestList = " + TestUtils.arrayToString(A) +
-                            "key = 0 was successfully found!\nkey = " + nonZero + " was successfully not found!\n");
+                            "key = 0 was successfully found!\nkey = " + NON_ZERO + " was successfully not found!\n");
                     trueKeysFound++;
                     falseKeysNotFound++;
                 }
+                assertTrue(T);
             }
             else{
-                boolean F = ListOperators.membership(A, nonZero+1);
-                boolean T = ListOperators.membership(A, nonZero);
+                boolean F = ListOperators.membership(A, NON_ZERO +1);
+                boolean T = ListOperators.membership(A, NON_ZERO);
+                logResult(repetitionInfo.getCurrentRepetition(), aString, T, F);
                 assertFalse(F);
                 assertTrue(T);
-                logResult(repetitionInfo.getCurrentRepetition(), aString, T, F);
             }
         }
     }
@@ -78,8 +80,6 @@ public class PairwiseTestList {
 
     @Test
     public void testNullMembership(){
-        int[] a = new int[]{1,2,3};
-        assertNotNull(a);
         try{
             ListOperators.membership(null, 1);
         }
@@ -93,12 +93,12 @@ public class PairwiseTestList {
 
     @AfterAll
     static void printResult(){
-        File file = new File("src/testFiles/pairwiseTest_Result");
+        File file = new File("src/testFiles/pairwiseTest_Result.txt");
         if(file.exists()){
             file.delete();
         }
         try {
-            FileWriter fileWriter = new FileWriter(new File("src/testFiles/pairwiseTest_Result"), true);
+            FileWriter fileWriter = new FileWriter(new File("src/testFiles/pairwiseTest_Result.txt"), true);
             String resultSummary = "\n\n~PAIRWISE TEST RESULT~" +
                     "\n--- summary ---" +
                     "\ntrueKeysFound = " + trueKeysFound +
@@ -139,22 +139,22 @@ public class PairwiseTestList {
 
     private synchronized void logResult(int repInfo, String testList, boolean T, boolean F){
         stringBuilder.append("\n\nTest repetition #" + repInfo + "\nTestList = " + testList);
-        int falseKey = nonZero+1;
+        int falseKey = NON_ZERO +1;
         if(!F){
             stringBuilder.append("key = " + falseKey + " was successfully not found!\n");
             falseKeysNotFound ++;
         }
-        else{
+        if(F){
             stringBuilder.append("key = " + falseKey + " was unsuccessfully found!\n");
             falseKeysFound ++;
         }
 
         if(T){
-            stringBuilder.append("key = " + nonZero + " was successfully found!\n");
+            stringBuilder.append("key = " + NON_ZERO + " was successfully found!\n");
             trueKeysFound ++;
         }
-        else{
-            stringBuilder.append("key = " + nonZero + " was NOT found!\n");
+        if(!T){
+            stringBuilder.append("key = " + NON_ZERO + " was NOT found!\n");
             trueKeysNotFound ++;
         }
         stringBuilder.append("=====================\n");
